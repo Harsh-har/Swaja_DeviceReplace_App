@@ -1,0 +1,713 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://www.bluetooth.com/specifications/specs/mesh-cdb-1-0-1-schema.json#",
+  "version": "1.0.1",
+  "meshUUID": "B315B747-5021-4B1C-AF18-484EA91CAA15",
+  "meshName": "nRF Mesh Network",
+  "timestamp": "2026-09-24T12:37:55+05:30",
+  "partial": false,
+  "netKeys": [
+    {
+      "name": "Network Key 1",
+      "index": 0,
+      "key": "0E2CABE19E86A79C07BBAE29885E723F",
+      "phase": 0,
+      "minSecurity": "insecure",
+      "timestamp": "2026-09-24T12:37:55+05:30"
+    }
+  ],
+  "appKeys": [
+    {
+      "name": "Application Key 1",
+      "index": 0,
+      "boundNetKey": 0,
+      "key": "29DD1F1C0380598D1008D133439229EC"
+    }
+  ],
+  "provisioners": [
+    {
+      "provisionerName": "nRF Mesh Provisioner",
+      "UUID": "BF4C5C23-54E8-45A3-9DAE-D977DB89613B",
+      "allocatedUnicastRange": [
+        {
+          "lowAddress": "0001",
+          "highAddress": "199A"
+        }
+      ],
+      "allocatedGroupRange": [
+        {
+          "lowAddress": "C000",
+          "highAddress": "CC9A"
+        }
+      ],
+      "allocatedSceneRange": [
+        {
+          "firstScene": "0001",
+          "lastScene": "3333"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "UUID": "BF4C5C23-54E8-45A3-9DAE-D977DB89613B",
+      "name": "nRF Mesh Provisioner",
+      "deviceKey": "6636BE22D0552559CBC0040F0DAC9274",
+      "unicastAddress": "0001",
+      "security": "insecure",
+      "configComplete": false,
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 2,
+        "relay": 2
+      },
+      "defaultTTL": 5,
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "elements": [
+        {
+          "name": "Element: 0x0001",
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        }
+      ],
+      "excluded": false
+    },
+    {
+      "UUID": "AEE304AE-EEC6-492D-A2C3-7BA23CC934A5",
+      "name": "Control Node",
+      "mac_address": "C9:3C:A2:7B:C3:A2",
+      "deviceKey": "93B68A8979DBA442A43F92E83A27FC74",
+      "unicastAddress": "0002",
+      "security": "insecure",
+      "configComplete": false,
+      "cid": "0059",
+      "pid": "0000",
+      "vid": "0000",
+      "crpl": "0028",
+      "features": {
+        "friend": 2,
+        "lowPower": 2,
+        "proxy": 0,
+        "relay": 2
+      },
+      "defaultTTL": 40,
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "elements": [
+        {
+          "name": "Element: 0x0002",
+          "index": 0,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "0000",
+              "bind": [],
+              "subscribe": []
+            },
+            {
+              "modelId": "0002",
+              "bind": [],
+              "subscribe": []
+            },
+            {
+              "modelId": "0003",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0003",
+          "index": 1,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0004",
+          "index": 2,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0005",
+          "index": 3,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0006",
+          "index": 4,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0007",
+          "index": 5,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0008",
+          "index": 6,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0009",
+          "index": 7,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x000A",
+          "index": 8,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x000B",
+          "index": 9,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x000C",
+          "index": 10,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x000D",
+          "index": 11,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x000E",
+          "index": 12,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x000F",
+          "index": 13,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0010",
+          "index": 14,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0011",
+          "index": 15,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0012",
+          "index": 16,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0013",
+          "index": 17,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0014",
+          "index": 18,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0015",
+          "index": 19,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0016",
+          "index": 20,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0017",
+          "index": 21,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0018",
+          "index": 22,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0019",
+          "index": 23,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x001A",
+          "index": 24,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x001B",
+          "index": 25,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x001C",
+          "index": 26,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x001D",
+          "index": 27,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x001E",
+          "index": 28,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x001F",
+          "index": 29,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0020",
+          "index": 30,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0021",
+          "index": 31,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0022",
+          "index": 32,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0023",
+          "index": 33,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0024",
+          "index": 34,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0025",
+          "index": 35,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0026",
+          "index": 36,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0027",
+          "index": 37,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0028",
+          "index": 38,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x0029",
+          "index": 39,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        },
+        {
+          "name": "Element: 0x002A",
+          "index": 40,
+          "location": "0000",
+          "models": [
+            {
+              "modelId": "1001",
+              "bind": [],
+              "subscribe": []
+            }
+          ]
+        }
+      ],
+      "excluded": false
+    },
+    {
+      "UUID": "3DEC1FA9-E755-450A-AEA4-5F4D7829D9D6",
+      "name": "Relay Node",
+      "mac_address": "E9:78:4D:5F:A4:2E",
+      "deviceKey": "C360F3C28433C42018425BDF7479AB49",
+      "unicastAddress": "002B",
+      "security": "insecure",
+      "configComplete": false,
+      "defaultTTL": 5,
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [],
+      "elements": [
+        {
+          "name": "Element: 0x002B",
+          "index": 0,
+          "location": "0000",
+          "models": []
+        }
+      ],
+      "excluded": false
+    },
+    {
+      "UUID": "977149DB-C0D0-4CA4-92EC-2A8015BD7DD4",
+      "name": "Relay Node",
+      "mac_address": "FD:15:80:2A:EC:D2",
+      "deviceKey": "CD77E59F6C267CD23417A19E72B363AD",
+      "unicastAddress": "002C",
+      "security": "insecure",
+      "configComplete": false,
+      "defaultTTL": 5,
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [],
+      "elements": [
+        {
+          "name": "Element: 0x002C",
+          "index": 0,
+          "location": "0000",
+          "models": []
+        }
+      ],
+      "excluded": false
+    },
+    {
+      "UUID": "7B7FCE6D-9975-4BA7-874D-F4CA9BBBFC7E",
+      "name": "Single Switch Node",
+      "mac_address": "FB:9B:CA:F4:4D:C7",
+      "deviceKey": "F53B694699E037C8A500E07F29CCB581",
+      "unicastAddress": "002D",
+      "security": "insecure",
+      "configComplete": false,
+      "defaultTTL": 5,
+      "netKeys": [
+        {
+          "index": 0,
+          "updated": false
+        }
+      ],
+      "appKeys": [],
+      "elements": [
+        {
+          "name": "Element: 0x002D",
+          "index": 0,
+          "location": "0000",
+          "models": []
+        }
+      ],
+      "excluded": false
+    }
+  ],
+  "groups": [],
+  "scenes": [],
+  "networkExclusions": []
+}
