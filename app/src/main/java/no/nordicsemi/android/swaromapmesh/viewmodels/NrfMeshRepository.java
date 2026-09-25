@@ -235,7 +235,7 @@ public class NrfMeshRepository implements MeshProvisioningStatusCallbacks, MeshS
 
     @Nullable
     private String readDefaultNetworkJson(@NonNull final Context context) {
-        try (java.io.InputStream is = context.getAssets().open("network/testcasting.json")) {
+        try (java.io.InputStream is = context.getAssets().open("network/villa-370.json")) {
             final java.io.ByteArrayOutputStream buffer = new java.io.ByteArrayOutputStream();
             final byte[] chunk = new byte[1024];
             int read;
@@ -425,7 +425,11 @@ public class NrfMeshRepository implements MeshProvisioningStatusCallbacks, MeshS
 
     private void clearExtendedMeshNode() { mExtendedMeshNode.postValue(null); }
 
-    // =========================================================================
+    // =============================================================
+    //
+    //
+    //
+    // ============
     // BleMeshManagerCallbacks
     // =========================================================================
 
@@ -451,6 +455,7 @@ public class NrfMeshRepository implements MeshProvisioningStatusCallbacks, MeshS
         mIsConnected.postValue(true);
         mConnectionState.postValue("…");
         mIsConnectedToProxy.postValue(true);
+
     }
 
     @Override
@@ -475,7 +480,8 @@ public class NrfMeshRepository implements MeshProvisioningStatusCallbacks, MeshS
                 final MeshNetwork network = mMeshManagerApi.getMeshNetwork();
                 if (network != null) network.setProxyFilter(null);
             }
-            // Safe to clear setup flag only on a true user-initiated disconnect.
+            // Safe to clear setup flag o
+            // nly on a true user-initiated disconnect.
             mSetupProvisionedNode = false;
         }
 
