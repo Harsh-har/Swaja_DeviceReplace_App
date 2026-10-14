@@ -13,7 +13,7 @@
     <g id="Technician Layer">
         <g id="Library Lawn">
             <!-- New Large Device for Provisioning -->
-            <g id="CMT_SVL01_0032_3_3">
+            <g id="CMT_SVL01_00E1_3_3">
                 <!-- Outer circle for better visibility -->
                 <circle cx="300" cy="140" r="10" fill="#ffae42" stroke="#ffffff" stroke-width="1.5"/>
                 <!-- Inner design to make it look like a sensor/node -->

@@ -4,7 +4,7 @@
     <string name="title_configuration_complete">Configuration Complete</string>
 
 
-    <string name="app_name">Swaro Mesh</string>
+    <string name="app_name">Swaro EditDevice</string>
     <string name="feature_name">Mesh</string>
     <string name="title_scanner">Scanning</string>
     <string name="sub_title_scanning_nodes">Looking for new devices …</string>

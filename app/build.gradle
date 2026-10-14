@@ -6,15 +6,12 @@ apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
 
-    namespace 'no.nordicsemi.android.swaromapmesh'
+    namespace 'no.nordicsemi.android.swaroeditdevice'
 
-    compileSdk 36
+    compileSdk 37
 
     defaultConfig {
-        applicationId "no.nordicsemi.android.swaromap" +
-                "" +
-                "" +
-                "meshprovisioner"
+        applicationId "no.nordicsemi.android.swaroeditdevice"
 
         minSdk 23
         targetSdk 35
